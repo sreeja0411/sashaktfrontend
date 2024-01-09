@@ -39,6 +39,7 @@ import SixLevel from './Components/SixLevel';
 import SevenLevel from './Components/SevenLevel';
 import EightLevel from './Components/EightLevel';
 import NineLevel from './Components/NineLevel';
+import TenLevel from './Components/TenLevel';
 
 function App() {
   return (
@@ -83,6 +84,7 @@ function App() {
           <Route path='/seven' element={<SevenLevel/>}/>
           <Route path='/eight' element={<EightLevel/>}/>
           <Route path='/nine' element={<NineLevel/>}/>
+          <Route path='/ten' element={<TenLevel/>}/>
         </Routes>
       </div>
   );

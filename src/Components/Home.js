@@ -45,7 +45,7 @@ const Home = () => {
               cursor: 'pointer', // Show pointer on hover
             }}
           >
-            GET STARTED
+            GET STARTED!
           </button>
           </Link>
         </div>
