@@ -1,0 +1,60 @@
+.card20:hover,
+.card20.shake {
+    transform: scale(1.1);
+  }
+  /* Youtubepage.css */
+.ytbackground-image {
+  background-image: url('https://wallpapercave.com/wp/wp2919299.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Set the minimum height to cover the entire viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Youtubepage.css */
+
+/* ... (existing styles) ... */
+
+.card20 {
+  height: 260px;
+  width: 400px;
+  margin-bottom: 50px; /* Add space below each row50 of cards */
+  margin-right: 50px; /* Add space between adjacent cards */
+}
+
+.card20-body {
+  height: 100%; /* Make sure the card bodies take full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(51, 175, 175);
+}
+
+.card20-body img {
+  width: 350px; /* Ensure images don't exceed their container width */
+  height: 200px; /* Ensure images don't exceed their container height */
+  object-fit: cover; /* Maintain image aspect ratio and cover the container */
+}
+
+/* Youtubepage.css */
+
+/* ... (existing styles) ... */
+
+/* Set the number of columns for different screen sizes */
+.row50 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-lg-4 {
+  flex-basis: calc(33.33% - 20px); /* Calculate width for three cards in a row50 */
+  margin-bottom: 20px; /* Add space between columns */
+}
+
+.row50 .col-lg-4:nth-child(3n) {
+  margin-right: 0;
+}
+

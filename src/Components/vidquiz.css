@@ -1,0 +1,227 @@
+.container1 { 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh; 
+    background-image: url("https://wallpapercave.com/wp/wp2919299.jpg");
+    background-attachment:fixed;
+    } 
+  .vq1{
+    color: #050100;
+    font-weight: 900;
+  }
+    
+  .word-container1 { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 50px; 
+    } 
+  .letter { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 60px; 
+    height: 60px; 
+    margin: 0 5px; 
+    border-radius: 50%; 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #fff; 
+    background-color: #333; 
+    opacity: 1; 
+    transition: opacity 0.2s ease-in-out; 
+    } 
+    
+  .letter.visible { 
+    opacity: 1; 
+    } 
+    
+  .button1-section { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    } 
+    
+  .guess-section { 
+    margin-bottom: 30px; 
+    } 
+    
+  .restart-button1, 
+  .remove-button1{ 
+    padding: 12px 20px; 
+    margin-right: 10px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    color: #fff; 
+    background-color: #f44336; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.2s ease-in-out; 
+    } 
+    
+  .remove-button1:disabled { 
+    background-color: #ccc; 
+    cursor: not-allowed; 
+    } 
+    
+  .restart-button1:hover, 
+  .remove-button1:hover { 
+    background-color: #d32f2f; 
+    } 
+    
+  .restart-button1:focus, 
+  .remove-button1:focus { 
+    outline: none; 
+    } 
+    
+  .letter-selection { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin-bottom: 30px; 
+    } 
+    
+  .letter-button1 { 
+    padding: 15px 5px; 
+    margin: 3px; 
+    font-size: 20 px; 
+    font-weight: bold; 
+    color: #fff; 
+    background-color: #53036c; 
+    border:#333;
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.2s ease-in-out; 
+    width: 150px;
+    } 
+    
+  .letter-button1.selected { 
+    background-color: rgb(133, 84, 134); 
+    } 
+    
+  .letter-button1:disabled { 
+    background-color: rgb(204, 204, 204)ccc; 
+    cursor: not-allowed; 
+    } 
+    
+  .hints { 
+    margin-bottom: 20px; 
+    font-size: 20px; 
+    font-weight: bold; 
+    color: #333; 
+    text-align: center;
+    } 
+    
+  .hint-button1 { 
+    padding: 12px 20px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    color: #fff; 
+    background-color: #4caf50; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.2s ease-in-out; 
+    } 
+    
+  .hint-button1:disabled { 
+    background-color: #ccc; 
+    cursor: not-allowed; 
+    } 
+    
+  .hint-button1:hover { 
+    background-color: #388e3c; 
+    } 
+    
+  .hint-button1:focus { 
+    outline: none; 
+    } 
+    
+  .message { 
+    font-size: 20px; 
+    font-weight: bold; 
+    color: #333; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    } 
+    
+  .guess-button1 { 
+    padding: 12px 30px; 
+    margin-top: 20px; 
+    font-size: 18px; 
+    font-weight: bold; 
+    color: #fff; 
+    background-color: #ff5722; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.2s ease-in-out; 
+    align-items: center;
+    } 
+    
+  .guess-button1:disabled { 
+    background-color: #ccc; 
+    cursor: not-allowed; 
+    } 
+    
+  .guess-button1:hover { 
+    background-color: #e64a19; 
+    } 
+    
+  .guess-button1:focus { 
+    outline: none; 
+    } 
+  .word-description { 
+    font-size: 35px; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-style:italic;
+    color: rgb(255, 2, 107); 
+    margin-bottom: 20px; 
+    }
+  .green-text {
+    color: green;
+    font-size: 30px;
+  }
+  
+  .blue-text {
+    color: blue;
+    font-size: 30px;
+  }
+  .score-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #080707;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 999;
+  }
+  
+  .score-card p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .score-card button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display:flow-root;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .score-card button:hover {
+    background-color: #3a613c;
+  }

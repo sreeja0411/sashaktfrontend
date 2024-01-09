@@ -1,0 +1,969 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.gameboardbody {
+  background-color:  rgb(21, 56, 66); 
+  /* Your desired background color */
+  height:100vh
+
+}
+
+.container26 { 
+  display: flex; 
+  flex-direction: column; 
+} 
+
+.header26 { 
+  display: flex; 
+  flex-direction: column; 
+  padding: 10px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+} 
+
+
+
+.button26 { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 0.5rem 0.8rem; 
+  font-family: cursive; 
+  /*width: 200px; */
+  width:10%;
+  font-size: 1.5rem; 
+  font-weight: bolder; 
+  border-radius: 0.7rem; 
+  border-style: none; 
+  background-color: red; 
+  color: white; 
+  margin-top: 4%; 
+ /* margin-left: 55%; */
+ margin-left: 46%; 
+} 
+
+.button26:hover { 
+  border: 2px solid black; 
+  cursor: pointer; 
+}
+
+
+/*
+.board { 
+  display: grid; 
+  margin: auto; 
+  margin-top: 3rem; 
+  grid-template-columns: repeat(4, 9rem); 
+  place-items: center; 
+  row-gap: 2rem; 
+} 
+*/
+.board26 {
+  display: grid;
+  margin: auto;
+  margin-top: 3rem;
+  grid-template-columns: repeat(4, 15rem); /* Increase card width */
+  place-items: center;
+  row-gap: 3rem; /* Increase gap between rows */
+}
+
+.comments { 
+  padding: 1rem 2rem; 
+  background-color: white; 
+  margin: auto; 
+  margin-top: 50px; 
+  text-align: center; 
+  border-radius: 2rem; 
+} 
+
+
+.face { 
+  height: 10rem; 
+  width: 10rem;
+  transition: transform ease-in 0.25s;
+  position: absolute; 
+} 
+
+.back { 
+  height: 8rem; 
+  width: 8rem; 
+  background-color: rgb(253, 218, 175); 
+  color: rgb(61, 21, 21); 
+  border: 1px solid black; 
+  border-radius: 50%; 
+} 
+
+.item .face { 
+  position: absolute; 
+  transform: rotateY(90deg); 
+  transition: all ease-in 0.25s; 
+  
+
+} 
+
+.toggled .face { 
+  transform: rotateY(0deg); 
+  transition-delay: 0.25s; 
+} 
+
+.item .back { 
+  transition: all ease-in 0.25s; 
+  transition-delay: 0.25s; 
+} 
+
+.toggled .back { 
+  transform: rotateY(90deg); 
+  transition-delay: 0s; 
+}
+
+
+
+.timer {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  margin-top: 2rem;
+}
+
+
+.popup-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(0, 0, 0); /* semi-transparent overlay */
+  width: 700px; 
+  height: 300px;/* Adjust the width as needed */
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.popup-content {
+  background: #fff;
+  height: 100%; /* Ensure the content takes full height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* ChildRightsInfo.css */
+
+/* Define base styles */
+
+/* ... (existing styles) ... */
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  .button26 {
+    width: 30%; /* Adjust button width for smaller screens */
+    font-size: 1rem; /* Decrease font size for smaller screens */
+    margin-left: 30%; /* Adjust button margin for centering on smaller screens */
+  }
+
+  .board26 {
+    grid-template-columns: repeat(2, 15rem); /* Adjust card width for smaller screens */
+    row-gap: 2rem; /* Adjust gap between rows for smaller screens */
+  }
+
+  .comments {
+    margin-top: 20px; /* Adjust margin top for comments on smaller screens */
+    padding: 0.5rem 1rem; /* Adjust padding for comments on smaller screens */
+    border-radius: 1rem; /* Adjust border radius for comments on smaller screens */
+  }
+
+  .face {
+    height: 8rem; /* Adjust face height for smaller screens */
+    width: 8rem; /* Adjust face width for smaller screens */
+  }
+
+  .back {
+    height: 6rem; /* Adjust back height for smaller screens */
+    width: 6rem; /* Adjust back width for smaller screens */
+  }
+
+  .popup-overlay {
+    width: 90%; /* Adjust the width of the overlay for smaller screens */
+    height: 200px; /* Adjust the height of the overlay for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .popup-content {
+    padding: 0.5rem; /* Adjust padding for content inside the overlay for smaller screens */
+  }
+
+  .timer {
+    font-size: 1.5rem; /* Decrease font size for timer on smaller screens */
+    margin-top: 1rem; /* Adjust margin top for timer on smaller screens */
+  }
+
+  /* Additional adjustments as needed */
+}
+
+.page {
+  background-image: url(https://tse3.mm.bing.net/th?id=OIP.K6FRLX5-C3XEdpKWhD3oVgHaEK&pid=Api&P=0&h=180);
+  background-size: cover; /* This ensures that the image covers the entire container */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center;
+  padding: 20px;
+  color:black;
+  font-family: Arial, sans-serif;
+  height: 150vh; 
+  font-size: 20px;
+}
+.quiz-button {
+  background-color: #d6dbea; /* Use your desired color */
+  color: #000000;
+  padding: 15px 30px; /* Increase padding for larger dimensions */
+  font-size: 18px; /* Increase font size for better visibility */
+  border: none;
+  border-radius: 8px; /* Increase border radius for rounded corners */
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px; /* Adjust as needed */
+}
+.options-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width:100%
+  /* Add other styling as needed */
+}
+.quiz-option {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 1.2rem;
+  background-color: #2e1797; /* Set your desired background color */
+  color: #fff; /* Set your desired text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /*flex: 1;
+  margin: 10px;
+  */
+}
+.quiz-container.custom-background {
+  background-image: url(https://tse3.mm.bing.net/th?id=OIP.K6FRLX5-C3XEdpKWhD3oVgHaEK&pid=Api&P=0&h=180);
+  /*background-color: peachpuff !important;*/
+  background-size: cover; /* This ensures that the image covers the entire container */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center;
+  padding: 20px;
+  height: 150vh; 
+  
+}
+.quiz-option.correct-answer {
+  background-color: green;
+  color: white;
+}
+
+.quiz-option.wrong-answer {
+  background-color: red;
+  color: white;
+}
+.question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question-content {
+  display: flex;
+  width: 100%;
+}
+
+.quiz-image {
+  width: 40%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 40%; /* Adjust the margin as needed */
+}
+
+/* Add this CSS to your stylesheet or CSS file */
+.clickable-box:hover {
+  background-color: #fff; /* Change the background color on hover */
+  border: 10px solid #222; /* Add a border on hover */
+  border-radius: 5px; /* Add rounded corners to the box on hover */
+  transition: background-color 0.3s, border 0.3s; /* Add a smooth transition for background color and border changes */
+}
+
+/* ProfileSelection.css */
+/* Original styles */
+
+.home-container {
+  position: relative;
+}
+
+.h2-text {
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  font-size: 50px;
+  color: #222;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 4);
+}
+
+.texts-style {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  font-size: 30px;
+  color: #222;
+}
+
+.box1-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 300px;
+}
+
+.clickable-box {
+  width: 550px;
+  height: 350px;
+  background-color: #dc143c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-style {
+  width: 450px;
+  height: 250px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box1 {
+  margin-left: 120px;
+}
+
+.box2 {
+  margin-right: 100px;
+}
+
+.box1-text,
+.box2-text {
+  position: absolute;
+  margin-top: 250px;
+  font-size: 30px;
+  color: #222;
+}
+
+/* Responsive styles for smaller screens */
+
+@media screen and (max-width: 768px) {
+  .h2-text {
+    top: 10%;
+    left: 25%;
+    font-size: 30px;
+  }
+
+  .texts-style {
+    top: 20%;
+    left: 6%;
+    font-size: 20px;
+  }
+
+  .box1-container {
+    margin-top: 200px;
+    margin-left: 60px;
+    flex-direction: column;
+  }
+
+  .clickable-box {
+    width: 80%;
+    height: 250px;
+  }
+
+  .image-style {
+    width: 70%;
+    height: 150px;
+  }
+
+  .box1 {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .box2 {
+    margin-right: 0;
+  }
+
+  .box1-text,
+  .box2-text {
+    margin-top: 170px;
+    font-size: 20px;
+  }
+}
+
+
+.homeContainer6 {
+  min-height: 190vh;
+  background-color: #F7DFF1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.textStyle9 {
+  position: absolute;
+  top: 12%;
+  left: 36%;
+  font-size: 60px;
+  color: #222;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 4);
+}
+
+.emojiContainer {
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Set 8 emojis in a row */
+  gap: 60px;
+}
+
+.emojiWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emojiStyle {
+  width: 160px;
+  height: 160px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* Add styles for other emojis similarly */
+
+/* For screens smaller than 768px (tablets) */
+@media (max-width: 768px) {
+  .textStyle9 {
+    font-size: 40px;
+    top: 10%;
+    left: 30%;
+  }
+
+  .emojiContainer {
+    margin-top: 10%;
+    grid-template-columns: repeat(3, 1fr); /* Display 3 emojis in a row */
+    gap: 20px;
+  }
+
+  .emojiStyle {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* For screens smaller than 480px (mobile devices) */
+@media (max-width: 480px) {
+  .textStyle9 {
+    font-size: 26px;
+    top: 10%;
+    left: 25%;
+  }
+
+  .emojiContainer {
+    margin-top: 15%;
+    grid-template-columns: repeat(2, 1fr); /* Display 2 emojis in a row */
+    gap: 20px;
+  }
+
+  .emojiStyle {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Add these styles to your CSS file */
+
+.activities {
+  text-align: center;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  text-decoration: none;
+  color: #333;
+  margin: 15px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+  background-color: #f9f9f9;
+  font-size: 24px;
+}
+
+/* Add these styles to your CSS file */
+
+/* Add these styles to your CSS file */
+
+.pikachu-info {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.pikachu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pikachu-image {
+  width: 100%;
+  max-width: 400px; /* Adjust the maximum width of the image */
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.pikachu-text {
+  text-align: center;
+  text-transform: none;
+}
+
+.pikachu-text h1 {
+  color: #f57c00;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.pikachu-text p {
+  color: #333;
+  line-height: 1.6;
+  font-size: 20px;
+  text-transform: none;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.additional-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.additional-boxes {
+  display: flex;
+  flex-direction: column; /* Set boxes to stack vertically */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.additional-box {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 1400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.additional-box h2 {
+  color: #f57c00;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.additional-box p {
+  color: #333;
+  line-height: 1.6;
+  text-transform: none;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; /* Adjust the gap as needed */
+}
+
+.image-grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* Adjust the gap as needed */
+}
+
+
+.step-content {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+
+.step-content img {
+  width: 250px; /* Adjust the image width */
+  height: auto;
+  margin-right: 20px;
+}
+
+.emoji-img {
+  width: 60px;
+  height: 60px;
+}
+
+.emoji-img2 {
+  width: 150px;
+  height: 150px;
+  margin-top: 10%;
+}
+
+.username {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.custom-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+
+
+.carousel {
+  position: relative;
+  width: 1400px;/* Adjust the max width as needed */
+  right: 400px;
+  overflow: hidden;
+}
+
+.carousel img {
+  display: block;
+  width: 1400px;
+  height: 650px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-btn.prev {
+  left: 0;
+}
+
+.carousel-btn.next {
+  right: 0;
+}
+
+.last-slide-container {
+  background-image: url('https://marketplace.canva.com/EAFJebotzdY/1/0/1600w/canva-beige-floral-minimalist-linktree-background-Jr6vl3hxUDw.jpg');
+  background-size: 100% auto; /* Adjust background-size as needed */
+  width: 100%;
+  height: 650px; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.last-slide {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.last-slide button {
+  margin-top: 10px;
+}
+
+.last-slide h2 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 45px;
+}
+
+
+.quiz27-container {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV93te2bR9Y45H56G9Wz4CzxyH7j42QSTD3w&usqp=CAU');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.question27-section {
+  text-align: center;
+  
+}
+
+.answer27-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.button127 {
+  margin-top: 50px;
+  padding: 100px; /* Increase button size */
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+}
+
+.correct27-answer {
+  background-color: #4caf50; /* Green for correct answer */
+  color: #fff;
+}
+
+.wrong27-answer {
+  background-color: #f44336; /* Red for wrong answer */
+  color: #fff;
+}
+
+.score27-section-box {
+  background-color: #93f279;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 100px;
+  
+}
+
+.score27-section {
+  display: inline;
+}
+
+.correct27-answer-text {
+font-size: 20px;
+font-weight: 500;
+}
+
+.box30 {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  &:focus {
+    outline: none;
+  }
+}
+
+.setting {
+  align-self: flex-start;
+  padding: 5px 10px;
+
+  button {
+    font-size: 15px;
+  }
+
+  input {
+    font-size: 20px;
+  }
+}
+
+.topWall {
+  border-top: 4px solid black;
+}
+
+.rightWall {
+  border-right: 4px solid black;
+}
+
+.bottomWall {
+  border-bottom: 4px solid black;
+}
+
+.leftWall {
+  border-left: 4px solid black;
+}
+
+.sol {
+  div {
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    background: peachpuff;
+    display: inline-block;
+  }
+}
+
+.currentPosition {
+  div {
+    background: salmon;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+  }
+}
+
+.destination {
+  div {
+    background: SpringGreen;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+  }
+}
+
+.currentPosition.destination {
+  div {
+    animation: rainbowBall 5s infinite;
+  }
+}
+
+@keyframes rainbowBall {
+  0%   {background-color: gold;}
+  15%  {background-color: coral;}
+  29%  {background-color: papayawhip;}
+  43%  {background-color: darkseagreen;}
+  57%  {background-color: lightcyan;}
+  71% {background-color: dodgerblue;}
+  84% {background-color: violet;}
+  100% {background-color: indigo;}
+}
+
+#maze {
+  margin-top: 105px;
+  border-collapse: collapse;
+  td {
+    height: 35px;
+    width: 35px;
+  }
+  
+}
+
+.info {
+  width: 200px;
+  position: absolute;
+  top: 100px;
+  background: cornsilk;
+  padding: 3px;
+  margin-left: 1200px;
+  font-size: 20px;
+  p {
+    text-transform: uppercase;
+    color: forestgreen;
+  }
+}
+
+#gradient {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  background: linear-gradient(-45deg, #EE7752, #b25579, #6aafc8, #23D5AB);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.flippedEmoji {
+  transform: scaleX(-1);
+  display: inline-block;
+}
+
