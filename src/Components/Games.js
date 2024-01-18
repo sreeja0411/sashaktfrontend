@@ -48,6 +48,34 @@ const Games = () => {
           </div>
         </div>
 
+        <div className="card1">
+          <div className="image">
+            <img src="https://store-images.s-microsoft.com/image/apps.54354.13510798882606697.7a42c472-75d7-487e-9538-ebb5ce1657e6.372723d8-dd1a-450a-9fed-d420e7705e4e" alt="Memory Game" />
+          </div>
+          <div className="title">
+            <h1>CANDY CRUSH</h1>
+          </div>
+          <div className="des">
+            <Link to="/candyhome">
+              <button>Let's Play</button>
+            </Link>
+          </div>
+        </div>
+        
+        <div className="card1">
+          <div className="image">
+            <img src="https://m.media-amazon.com/images/I/81vUugnr2JL.jpg" alt="Memory Game" />
+          </div>
+          <div className="title">
+            <h1>STICK MAN</h1>
+          </div>
+          <div className="des">
+            <Link to="/stickman">
+              <button>Let's Play</button>
+            </Link>
+          </div>
+        </div>
+        
       </div>
     </div>
   );

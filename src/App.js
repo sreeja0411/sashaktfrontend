@@ -40,6 +40,12 @@ import SevenLevel from './Components/SevenLevel';
 import EightLevel from './Components/EightLevel';
 import NineLevel from './Components/NineLevel';
 import TenLevel from './Components/TenLevel';
+import CandyHome from './Components/CandyHome';
+import CandyGame from './Components/CandyGame';
+import CandyAbout from './Components/CandyAbout';
+import Rights from './Components/Rights';
+import Login from './Components/Login';
+import CandyEatGame from './Components/CandyEatGame';
 
 function App() {
   return (
@@ -85,6 +91,12 @@ function App() {
           <Route path='/eight' element={<EightLevel/>}/>
           <Route path='/nine' element={<NineLevel/>}/>
           <Route path='/ten' element={<TenLevel/>}/>
+          <Route path='/candyhome' element={<CandyHome/>}/>
+          <Route path='/candygame' element={<CandyGame/>}/>
+          <Route path='/candyabout' element={<CandyAbout/>}/>
+          <Route path='/rights' element={<Rights/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/candyeatgame' element={<CandyEatGame/>}/>
         </Routes>
       </div>
   );

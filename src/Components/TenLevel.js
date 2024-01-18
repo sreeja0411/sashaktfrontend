@@ -214,7 +214,6 @@ const generateCollectibles = () => {
 
 const timerBoxStyle = {
   border: '2px solid #ccc',
-  padding: '8px',
   marginTop: '0px',
   background: 'cornsilk',
   width: '180px',

@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import axios  from 'axios';
 
 const SubmittedInfo = () => {
   const { emojiUrl, name } = useParams();
@@ -16,36 +15,30 @@ const SubmittedInfo = () => {
   };
 
   const textStyle = {
-    position: "absolute",
-    top: "12%", // Adjusted for responsiveness
-    left: "50%",
-    fontSize: "clamp(24px, 10vw, 60px)", // Responsive font size using clamp()
+    fontSize: "clamp(16px, 4vw, 60px)", // Responsive font size using clamp()
     color: "#222",
     textShadow: '2px 2px 4px rgba(0, 0, 0, 0.4)',
-    transform: "translateX(-50%)",
+    textAlign: "center",
   };
 
   const imgStyle = {
-    width: "300px",
-    height: "300px",
-    marginTop: "50px", // Adjusted margin for the image
+    width: "50vw", // Adjusted width for responsiveness
+    height: "auto",
+    maxWidth: "300px", // Maximum width for larger screens
+    marginTop: "20px", // Adjusted margin for the image
   };
 
   const text2Style = {
-    fontSize: "clamp(16px, 8vw, 60px)", // Responsive font size using clamp()
+    fontSize: "clamp(14px, 3vw, 24px)", // Responsive font size using clamp()
     color: "#222",
     textShadow: '2px 2px 4px rgba(0, 0, 0, 0.4)',
+    textAlign: "center",
   };
 
-
   const buttonStyle2 = {
-    position: "absolute",
-    bottom: "3%", // Adjusted positions for responsiveness
-    left: "50%",
-    transform: "translateX(-50%)",
-    height: "6%",
-    width: "10%",
-    fontSize: "clamp(10px, 3vw, 18px)", // Responsive font size using clamp()
+    height: "6vh", // Adjusted height for responsiveness
+    width: "20vw", // Adjusted width for responsiveness
+    fontSize: "clamp(12px, 2vw, 18px)", // Responsive font size using clamp()
     backgroundColor: "#007bff",
     color: "#fff",
     border: "none",
@@ -54,23 +47,12 @@ const SubmittedInfo = () => {
     outline: "none",
   };
 
-  let clickHandler = (e) => {
-    e.preventDefault();
-    console.log(' clicked');
-    //make an axios call to store the emoji url with username
-    //let storeinDB = async () =>{
-    //let resp = await axios.get("http://localhost:5000/");
-    //console.log(resp);
-   // }
-    //storeinDB();
-    sessionStorage.setItem("Name",decodeURIComponent(name))
-    sessionStorage.setItem("emoji",decodeURIComponent(emojiUrl))
-  }
   const handleNavigation = () => {
     // Your logic (e.g., axios call, session storage setting) goes here...
     sessionStorage.setItem("Name", decodeURIComponent(name));
     sessionStorage.setItem("emoji", decodeURIComponent(emojiUrl));
   };
+
   return (
     <div style={homeContainerStyle}>
       <div>
@@ -80,10 +62,10 @@ const SubmittedInfo = () => {
       <div>
         <p style={text2Style}>{decodeURIComponent(name)}</p>
       </div>
-      <div>
-      <Link to="/Activities" onClick={handleNavigation}>
-            <button style={buttonStyle2}>NEXT</button>
-      </Link>
+      <div className="profile-display">
+        <Link to="/Activities" onClick={handleNavigation}>
+          <button style={buttonStyle2}>NEXT</button>
+        </Link>
       </div>
     </div>
   );

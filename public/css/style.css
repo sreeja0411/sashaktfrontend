@@ -691,6 +691,7 @@ header{
     
     .card55 {
         width: 100%; /* Full width for small screens */
+        height: 500px;
     }
 }
 

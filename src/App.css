@@ -677,6 +677,58 @@
   margin-right: 20px;
 }
 
+.youtube-video {
+  width: 50%;
+  height: 415px;
+}
+
+@media screen and (max-width: 768px) {
+  .pikachu-content {
+    flex-direction: column;
+  }
+
+  .pikachu-text {
+    text-align: center;
+  }
+
+  .pikachu-image {
+    margin-bottom: 10px;
+  }
+
+  .step-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .step-content img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .additional-box {
+    width: 300px;
+  }
+
+  .youtube-video {
+    width: 320px;
+    height: 250px;
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px; /* Adjust the gap as needed */
+  }
+  
+  .image-grid2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px; /* Adjust the gap as needed */
+  }
+}
+
+
+
 .emoji-img {
   width: 60px;
   height: 60px;
@@ -966,4 +1018,596 @@ font-weight: 500;
   transform: scaleX(-1);
   display: inline-block;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+
+.app9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: black;
+}
+
+.score-board9 {
+  background-color: #bac007;
+  width: 100%;
+  font-size: 2em;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+  border-radius: 10px;
+  margin: 10px;
+  margin-top: 50px;
+}
+
+/*  style for the game section */
+
+.game9 {
+  width: 500px; /* Set the width of the game container to 500px */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+}
+
+.game9 img {
+  width: calc(12.5% - 10px); /* Adjust width to fit 8 candies per row */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+  transition: transform 0.3s ease-in-out;
+  margin: 5px; /* Increase margin to match width adjustment */
+}
+
+
+.game9 img:hover {
+  box-shadow: 0px 3px 6px gold;
+  transform: scale(1.1);
+}
+
+
+/* Set variables for colors */
+:root {
+  --primary-color: black ;
+  --secondary-color: yellow ;
+  --body-font: 'Roboto', sans-serif;
+}
+
+/* Style the body */
+  
+/* Style the header */
+.header9 {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+}
+
+/* Style the logo */
+.logo9 img {
+  height: 30px;
+  border-radius: 50%;
+
+}
+
+/* Style the mute button */
+.icon9 {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: auto;
+}
+.icon9 img {
+  height: 20px;
+  margin-right: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+/* Style the main content */
+
+.main-body9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1rem;
+  margin-bottom: 1rem;
+  font-family: var(--body-font);
+  background-color: var(--primary-color);
+}
+
+.content9 {
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Style the banner */
+.banner9 {
+  font-size: 15rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  padding: 2rem;
+  font-family: 'Passion One', cursive;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px yellow;
+  animation-name: shadow-pulse;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 10px yellow;
+  }
+  50% {
+    box-shadow: 0 0 20px yellow;
+  }
+  100% {
+    box-shadow: 0 0 10px yellow;
+  }
+}
+
+
+/* Style the motto */
+.motto9 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--secondary-color);
+  text-shadow: 0 0 5px yellow;
+  position: relative;
+}
+
+/* Style the start game button */
+.start-game9 {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  margin: 10px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.start-game9:hover {
+  transform: scale(1.05);
+}
+
+/* Style the candy crush image */
+.candy-crush-image9 {
+  width: 400px;
+  margin: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 4.5rem;
+}
+
+.candy-crush-image19 {
+  width: 400px;
+  margin: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 4.5rem;
+}
+
+.candy9-button {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 2px;
+  border-radius: 4.5rem;
+  transition: all 0.2s ease-in-out;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-right: 800px;
+}
+
+.candy19-button {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 2px;
+  border-radius: 4.5rem;
+  transition: all 0.2s ease-in-out;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-left: 800px;
+  position: relative;
+  bottom: 450px;
+}
+
+.candy9-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.candy19-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+
+/* Style the footer */
+.footer9 {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.about9{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #000000;
+  height: 660px;
+}
+
+.about9-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 1rem;
+  margin: 50px;
+  margin-bottom: 2rem;
+}
+
+.about9-body {
+ 
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: black;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 50%;
+}
+
+/* Add these styles to your CSS file */
+.home-about {
+  display: flex;
+  justify-content: flex-end; /* Adjust alignment to the right */
+  margin-top: 20px; /* Add margin-top as needed */
+}
+
+.candy1 {
+  width: 100px; /* Adjust the width of the image */
+  height: 100px; /* Adjust the height of the image */
+  border-radius: 50%;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+
+.candy2 {
+  width: 100px; /* Adjust the width of the image */
+  height: 100px; /* Adjust the height of the image */
+  border-radius: 50%;
+  position: absolute;
+  right: 100px;
+  top: 100px;
+}
+
+.candy3 {
+  width: 80px; /* Adjust the width of the image */
+  height: 80px; /* Adjust the height of the image */
+  border-radius: 50%;
+  position: absolute;
+  left: 100px;
+  top: 75px;
+}
+
+.candy4 {
+  width: 80px; /* Adjust the width of the image */
+  height: 80px; /* Adjust the height of the image */
+  border-radius: 50%;
+  position: absolute;
+  right: 100px;
+  top: 75px;
+}
+
+.about-instructions h1{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.about-instructions h2{
+  font-size: 24px;
+  font-weight: 600;
+  color: #2e1797;
+}
+
+.about-instructions p{
+  font-size: 18px;
+  font-family:cursive;
+  text-transform: none;
+}
+
+
+/* Rights.css */
+.background75 {
+  background-image: url('https://media.istockphoto.com/id/1460481367/vector/abstract-colorful-liquid-color-gradient-design-background.jpg?b=1&s=612x612&w=0&k=20&c=4utyLUpC-5JcE_W32e4CT5IWDVohg-8Oyxtgf4Q7Miw=');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.card75-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards */
+  margin: -15px; /* Adjust negative margin to remove extra space between cards */
+  max-width: 800px; /* Set max-width for responsiveness */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card75 {
+  flex: 0 0 calc(50% - 30px); /* Adjust width and margin as needed */
+  margin: 15px;
+  box-sizing: border-box; /* Ensure that padding and borders are included in the width */
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+}
+
+.card75:hover {
+  transform: scale(1.05); /* Increase the scale on hover for a zoom effect */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Enhance box shadow on hover */
+}
+
+.card75-img-top {
+  transition: transform 0.3s;
+  border-radius: 10px 10px 0 0; /* Apply border-radius only to the top corners of the image */
+}
+
+.card75:hover .card75-img-top {
+  transform: scale(1); /* Reset the scale on hover for the image */
+}
+
+.card75-body {
+  padding: 20px;
+}
+
+.card75-title {
+  margin-bottom: 10px;
+  font-size: 2rem; /* Adjust font size for smaller screens */
+  color: #333; /* Set text color */
+}
+
+.btn-outline-warning {
+  color: #f8f9fa; /* Set text color for the button */
+  background-color: #000000; /* Set button background color */
+  border-color: #000000; /* Set button border color */
+}
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 767px) {
+  .card75 {
+    flex: 0 0 calc(100% - 30px);
+  }
+
+  .card75-title {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+}
+
+
+
+/* Add this to your existing CSS file or create a new one */
+.background175 {
+  background-image: url('https://user-images.githubusercontent.com/13468728/233847739-219cb494-c265-4554-820a-bd3424c59065.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0); /* Set the alpha value to 0 for total transparency */
+  border-radius: 8px;
+  border: 2px solid #fff; /* Add white border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+.inputbox {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #888;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.inputbox input:focus + label,
+.inputbox input:valid + label {
+  top: -12px;
+  font-size: 12px;
+  color: #333;
+}
+
+.inputbox label.active {
+  top: -12px;
+  font-size: 12px;
+  color: #333;
+}
+
+
+.forget {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.register {
+  color: #2d2c2c;
+  font-size: 16px;
+}
+
+
+
+.container12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#score {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+#introduction {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  font-weight: 600;
+  font-size: 0.8em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  transition: opacity 2s;
+}
+
+#restart {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: red;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  cursor: pointer;
+}
+
+#perfect {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+#youtube {
+  display: none;
+}
+
+@media (min-height: 425px) {
+  /** Youtube logo by https://codepen.io/alvaromontoro */
+  #youtube {
+    z-index: 2;
+    display: block;
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: red;
+    border-radius: 50% / 11%;
+    transform: scale(0.8);
+    transition: transform 0.5s;
+  }
+
+  #youtube:hover,
+  #youtube:focus {
+    transform: scale(0.9);
+  }
+
+  #youtube::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7.5%;
+    left: -6%;
+    width: 112%;
+    height: 85%;
+    background: red;
+    border-radius: 9% / 50%;
+  }
+
+  #youtube::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 45px;
+    height: 30px;
+    border: 15px solid transparent;
+    box-sizing: border-box;
+    border-left: 30px solid white;
+  }
+
+  #youtube span {
+    font-size: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+
+
 
