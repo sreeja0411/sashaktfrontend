@@ -62,20 +62,6 @@ const Games = () => {
           </div>
         </div>
         
-        <div className="card1">
-          <div className="image">
-            <img src="https://m.media-amazon.com/images/I/81vUugnr2JL.jpg" alt="Memory Game" />
-          </div>
-          <div className="title">
-            <h1>STICK MAN</h1>
-          </div>
-          <div className="des">
-            <Link to="/stickman">
-              <button>Let's Play</button>
-            </Link>
-          </div>
-        </div>
-        
       </div>
     </div>
   );

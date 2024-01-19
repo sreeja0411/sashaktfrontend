@@ -200,12 +200,12 @@ const Rose = () => {
                     <h2>STEP 9</h2>
                     <div className="step-content">
                         <img
-                            src="images/origami-rose-instructions-step-9.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-9.jpg"
                             alt=""
                             className="pikachu-image"
                         />
                         <img
-                            src="images/origami-rose-instructions-step-9-1.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-9-1.jpg"
                             alt=""
                             className="pikachu-image"
                         />
@@ -216,7 +216,7 @@ const Rose = () => {
                     <h2>STEP 10</h2>
                     <div className="step-content">
                         <img
-                            src="images/origami-rose-instructions-step-10.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-10.jpg"
                             alt=""
                             className="pikachu-image"
                         />
@@ -227,7 +227,7 @@ const Rose = () => {
                     <h2>STEP 11</h2>
                     <div className="step-content">
                         <img
-                            src="images/origami-rose-instructions-step-11.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-11.jpg"
                             alt=""
                             className="pikachu-image"
                         />
@@ -238,17 +238,17 @@ const Rose = () => {
                     <h2>STEP 12</h2>
                     <div className="step-content">
                         <img
-                            src="images/origami-rose-instructions-step-12.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-12.jpg"
                             alt=""
                             className="pikachu-image"
                         />
                         <img
-                            src="images/origami-rose-instructions-step-12-1.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-12-1.jpg"
                             alt=""
                             className="pikachu-image"
                         />
                         <img
-                            src="images/origami-rose-instructions-step-12-2.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-12-2.jpg"
                             alt=""
                             className="pikachu-image"
                         />
@@ -259,17 +259,17 @@ const Rose = () => {
                     <h2>STEP 13</h2>
                     <div className="step-content">
                         <img
-                            src="images/origami-rose-instructions-step-13.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-13.jpg"
                             alt=""
                             className="pikachu-image"
                         />
                         <img
-                            src="images/origami-rose-instructions-step-13-1.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-13-1.jpg"
                             alt=""
                             className="pikachu-image"
                         />
                         <img
-                            src="images/origami-rose-instructions-step-13-2.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-13-2.jpg"
                             alt=""
                             className="pikachu-image"
                         />
@@ -281,22 +281,22 @@ const Rose = () => {
                     <div className="step-content">
                     <div className="image-grid">
                         <img
-                            src="images/origami-rose-instructions-step-14.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-14.jpg"
                             alt=""
                             className="pikachu-image"
                         />
                         <img
-                            src="images/origami-rose-instructions-step-14-1.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-14-1.jpg"
                             alt=""
                             className="pikachu-image"
                         />
                         <img
-                            src="images/origami-rose-instructions-step-14-2.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-14-2.jpg"
                             alt=""
                             className="pikachu-image"
                         />
                         <img
-                            src="images/origami-rose-instructions-step-14-3.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-14-3.jpg"
                             alt=""
                             className="pikachu-image"
                         />
@@ -308,17 +308,17 @@ const Rose = () => {
                     <h2>STEP 15</h2>
                     <div className="step-content">
                         <img
-                            src="images/origami-rose-instructions-step-15.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-15.jpg"
                             alt=""
                             className="pikachu-image"
                         />
                         <img
-                            src="images/origami-rose-instructions-step-15-1.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-15-1.jpg"
                             alt=""
                             className="pikachu-image"
                         />
                         <img
-                            src="images/origami-rose-instructions-step-15-2.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-15-2.jpg"
                             alt=""
                             className="pikachu-image"
                         />
@@ -330,22 +330,22 @@ const Rose = () => {
                     <div className="step-content">
                     <div className="image-grid">
                         <img
-                            src="images/origami-rose-instructions-step-16.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-16.jpg"
                             alt=""
                             className="pikachu-image"
                         />
                         <img
-                            src="images/origami-rose-instructions-step-16-1.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-16-1.jpg"
                             alt=""
                             className="pikachu-image"
                         />
                         <img
-                            src="images/origami-rose-instructions-step-16-2.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-16-2.jpg"
                             alt=""
                             className="pikachu-image"
                         />
                         <img
-                            src="images/origami-rose-instructions-step-16-3.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-16-3.jpg"
                             alt=""
                             className="pikachu-image"
                         />
@@ -357,17 +357,17 @@ const Rose = () => {
                     <h2>STEP 17</h2>
                     <div className="step-content">
                         <img
-                            src="images/origami-rose-instructions-step-17.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-17.jpg"
                             alt=""
                             className="pikachu-image"
                         />
                         <img
-                            src="images/origami-rose-instructions-step-17-1.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-17-1.jpg"
                             alt=""
                             className="pikachu-image"
                         />
                         <img
-                            src="images/origami-rose-instructions-step-17-2.jpg"
+                            src="https://www.origamiway.com/images/rose/origami-rose-instructions-step-17-2.jpg"
                             alt=""
                             className="pikachu-image"
                         />
