@@ -2,6 +2,9 @@ import React, { useState, useEffect, useCallback } from "react";
 import Data from "./data";
 import Card from "./Card";
 import GameCompletePopup from "./GameCompletePopup";
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 function GameBoard() {
   const [cardsArray, setCardsArray] = useState([]);
@@ -87,6 +90,11 @@ function GameBoard() {
 
   return (
     <div className="gameboardbody">
+      <div className="back-container">
+                <Link to="/games" className="back-button">
+                    <FontAwesomeIcon icon={faArrowLeft} />
+                </Link>
+      </div>
       <div className="container26">
         <div className="header26 text-center">
           <h3 style={textStyle}>Memory Game</h3>

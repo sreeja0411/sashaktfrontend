@@ -3,6 +3,8 @@ import "./puzzle.css";
 import { JigsawPuzzle } from "react-jigsaw-puzzle/lib";
 import "react-jigsaw-puzzle/lib/jigsaw-puzzle.css";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 function Participation() {
   const [text, setText] = useState("Unpuzzle the pieces!!");
@@ -264,7 +266,7 @@ function Participation() {
     return (
       <div className={`jigsaw-puzzle${blurred ? ' blurred' : ''}`}>
       <JigsawPuzzle
-        imageSrc="https://timemaster.ae/uploads/news_article/how-can-public-speaking-training-for-kids-help_2021_12_28_09_25_23.webp"
+        imageSrc="https://www.togetherscotland.org.uk/media/1463/re-1-web-livwan-together-illustration-2.jpg?anchor=center&mode=crop&quality=70&width=800&height=480&rnd=132513863240000000"
         rows={rows}
         columns={columns}
         onSolved={() => {
@@ -282,8 +284,13 @@ function Participation() {
 
   return (
     <div className="puzzle-container">
+      <div className="back-container">
+                <Link to="/gamehome" className="back-button" style={{marginLeft:'20px'}}>
+                    <FontAwesomeIcon icon={faArrowLeft} />
+                </Link>
+      </div>
       <div className="timer-box">
-      <div className="timer-inner-box" style={{width:'150px',marginTop:'100px',fontSize:'20px'}}>
+      <div className="timer-inner-box" style={{width:'150px',fontSize:'20px'}}>
         <p>Timer: {timer}s</p>
       </div>
     </div>
@@ -292,7 +299,7 @@ function Participation() {
       </div>
       <div className="left-box">
         <img
-          src="https://timemaster.ae/uploads/news_article/how-can-public-speaking-training-for-kids-help_2021_12_28_09_25_23.webp"
+          src="https://www.togetherscotland.org.uk/media/1463/re-1-web-livwan-together-illustration-2.jpg?anchor=center&mode=crop&quality=70&width=800&height=480&rnd=132513863240000000"
           alt="Image"
           className="side-image"
         />

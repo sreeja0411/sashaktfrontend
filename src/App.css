@@ -759,6 +759,7 @@
 
 .carousel {
   position: relative;
+  top: 80px;
   width: 1400px;/* Adjust the max width as needed */
   right: 400px;
   overflow: hidden;
@@ -767,7 +768,7 @@
 .carousel img {
   display: block;
   width: 1400px;
-  height: 650px;
+  height: 550px;
 }
 
 .carousel-btn {
@@ -1232,7 +1233,7 @@ font-weight: 500;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin-left: 800px;
   position: relative;
-  bottom: 450px;
+  bottom: 480px;
 }
 
 .candy9-button:hover {
@@ -1354,7 +1355,7 @@ font-weight: 500;
 
 /* Rights.css */
 .background75 {
-  background-image: url('https://media.istockphoto.com/id/1460481367/vector/abstract-colorful-liquid-color-gradient-design-background.jpg?b=1&s=612x612&w=0&k=20&c=4utyLUpC-5JcE_W32e4CT5IWDVohg-8Oyxtgf4Q7Miw=');
+  background-image: url('https://st.depositphotos.com/1605581/2285/i/450/depositphotos_22858404-stock-photo-abstract-blue-background.jpg');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -1426,7 +1427,7 @@ font-weight: 500;
 
 /* Add this to your existing CSS file or create a new one */
 .background175 {
-  background-image: url('https://user-images.githubusercontent.com/13468728/233847739-219cb494-c265-4554-820a-bd3424c59065.jpg');
+  background-color: #fff;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -1440,35 +1441,60 @@ font-weight: 500;
 }
 
 .login-form {
-  background-color: rgba(255, 255, 255, 0); /* Set the alpha value to 0 for total transparency */
-  border-radius: 8px;
-  border: 2px solid #fff; /* Add white border */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 20px; /* Adjust padding for inner spacing */
+  margin-top: 20px;
   width: 300px;
   text-align: center;
   backdrop-filter: blur(5px);
+  transition: background-color 0.5s;
+  height: 400px;
+}
+
+.login-form:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.login-form h1 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.login-image {
+  width: 450px;
+  height: 600px;
+  margin-left: 15%;
+  margin-top: -5%;
+  border-radius: 10px;
 }
 
 .inputbox {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 input {
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   margin-top: 5px;
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #aaa;
   outline: none;
   font-size: 16px;
+  transition: border-bottom 0.3s, color 0.3s;
+}
+
+input:focus {
+  border-bottom: 2px solid #333;
 }
 
 label {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 15px;
+  left: 15px;
   color: #888;
   pointer-events: none;
   transition: 0.3s;
@@ -1487,18 +1513,80 @@ label {
   color: #333;
 }
 
+/* Add these styles to your existing styles or in a separate CSS file */
 
-.forget {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  font-size: 14px;
+.login2-button {
+  background-color: #4c78af; /* Green background color */
+  color: white; /* White text color */
+  padding: 15px 20px; /* Padding for the button */
+  width: 200px;
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Add pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  margin-top: 20px;
+
+  /* Hover effect */
 }
 
-.register {
-  color: #2d2c2c;
-  font-size: 16px;
+.login2-button:hover {
+  background-color: #4560a0; /* Darker green on hover */
 }
+@media only screen and (max-width: 768px) {
+  .login-section {
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  .login-form {
+    width: 90%; /* Adjusted width for smaller screens */
+    max-width: 90%; /* Added max-width for smaller screens */
+    position: relative;
+    margin-top: 150px;
+    margin-left: -240px;
+  }
+
+  .login-form h1 {
+    font-size: 6vw; /* Adjusted font-size for smaller screens */
+  }
+
+  .login-image {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin-bottom: 350px;
+    margin-left: 160px;
+
+  }
+
+  .inputbox {
+    margin-bottom: 3vw; /* Adjusted margin for smaller screens */
+  }
+
+  input {
+    padding: 3vw; /* Adjusted padding for smaller screens */
+    margin-top: 1.5vw; /* Adjusted margin for smaller screens */
+    font-size: 3vw; /* Adjusted font-size for smaller screens */
+  }
+
+  label {
+    top: 1.5vw; /* Adjusted top for smaller screens */
+    left: 1.5vw; /* Adjusted left for smaller screens */
+  }
+
+  .login2-button {
+    padding: 3vw 4vw; /* Adjusted padding for smaller screens */
+    width: 90%; /* Adjusted width for smaller screens */
+    max-width: 90%; /* Added max-width for smaller screens */
+    font-size: 3vw; /* Adjusted font-size for smaller screens */
+    margin-top: 3vw; /* Adjusted margin for smaller screens */
+  }
+}
+
+
+
+
+
 
 
 
@@ -1609,5 +1697,28 @@ label {
 }
 
 
+.back-container {
+  position: absolute;
+  left: 30px;
+  top: 95px;
+}
 
+.back-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 35px;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
 

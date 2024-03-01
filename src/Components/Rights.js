@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Rights = () => {
   const cardData = [
@@ -55,6 +57,11 @@ const Rights = () => {
 
   return (
     <div className="background75">
+      <div className="back-container" style={{top:'80px'}}>
+                <Link to="/Activities" className="back-button">
+                    <FontAwesomeIcon icon={faArrowLeft} />
+                </Link>
+      </div>
     <div className="container mt-4">
       <div className="heading-box text-center mb">
         <h1>KNOW YOUR RIGHTS</h1>

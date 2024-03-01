@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom";
 import './Youtubepage.css'; // Import the CSS file for styling
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Youtubepage = () => {
   return (
     <div className="ytbackground-image">
+        <div className="back-container">
+                <Link to="/Activities" className="back-button">
+                    <FontAwesomeIcon icon={faArrowLeft} />
+                </Link>
+      </div>
       <div>
             <div class="container mt-5">
                 <div class="row50">

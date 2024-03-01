@@ -3,16 +3,19 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
-const Read = () => {
+const Read2 = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const images = [
-    'https://res.cloudinary.com/djpqj3nhr/image/upload/v1700888086/carimg1_fs92jl.jpg',
-    'https://res.cloudinary.com/djpqj3nhr/image/upload/v1700888194/carimg2_hib2ua.jpg',
-    'https://res.cloudinary.com/djpqj3nhr/image/upload/v1700888249/carimg3_e3xnej.jpg',
-    'https://res.cloudinary.com/djpqj3nhr/image/upload/v1700892155/carimg4_f8wrlx.jpg',
-    'https://res.cloudinary.com/djpqj3nhr/image/upload/v1700892817/carimg5_qgvcrs.jpg',
-    'https://res.cloudinary.com/djpqj3nhr/image/upload/v1700892936/carimg6_rs9v2o.jpg',
-    'https://res.cloudinary.com/djpqj3nhr/image/upload/v1700893012/carimg7_dyacml.jpg',
+    'https://res.cloudinary.com/djpqj3nhr/image/upload/v1705846769/Screenshot_2024-01-21_192207_sigjws.png',
+    'https://res.cloudinary.com/djpqj3nhr/image/upload/v1705846897/Screenshot_2024-01-21_192243_ljogwt.png',
+    'https://res.cloudinary.com/djpqj3nhr/image/upload/v1705846908/Screenshot_2024-01-21_192255_g58t3e.png',
+    'https://res.cloudinary.com/djpqj3nhr/image/upload/v1705846942/Screenshot_2024-01-21_192315_entsot.png',
+    'https://res.cloudinary.com/djpqj3nhr/image/upload/v1705846956/Screenshot_2024-01-21_192334_h2exnl.png',
+    'https://res.cloudinary.com/djpqj3nhr/image/upload/v1705846989/Screenshot_2024-01-21_192354_qu5qis.png',
+    'https://res.cloudinary.com/djpqj3nhr/image/upload/v1705847003/Screenshot_2024-01-21_192418_abdmio.png',
+    'https://res.cloudinary.com/djpqj3nhr/image/upload/v1705847025/Screenshot_2024-01-21_192444_io8r3l.png',
+    'https://res.cloudinary.com/djpqj3nhr/image/upload/v1705847072/Screenshot_2024-01-21_192504_hdvziy.png',
+    'https://res.cloudinary.com/djpqj3nhr/image/upload/v1705847056/Screenshot_2024-01-21_192517_alseim.png',
   ];
 
   const nextSlide = () => {
@@ -34,7 +37,7 @@ const Read = () => {
   const lastSlide = (
     <div className="last-slide">
       <h2>Do you want to Learn more?</h2>
-      <Link to="/readquiz">
+      <Link to="/readquiz2">
         <button className="btn btn-primary mr-2">Yes</button>
       </Link>
       <Link to="/Activities">
@@ -67,4 +70,4 @@ const Read = () => {
   );
 };
 
-export default Read;
+export default Read2;

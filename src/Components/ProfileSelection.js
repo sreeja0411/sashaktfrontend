@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const ProfileSelection = () => {
   return (
     <div className="home1-container">
+      <div className="back-container">
+                <Link to="/loginsignup" className="back-button">
+                    <FontAwesomeIcon icon={faArrowLeft} />
+                </Link>
+      </div>
       <h2 className="h2-text">MAKE IT YOURS</h2>
       <p className="texts-style">
         𝘗𝘦𝘳𝘴𝘰𝘯𝘢𝘭𝘪𝘻𝘦 𝘺𝘰𝘶𝘳 𝘦𝘹𝘱𝘦𝘳𝘪𝘦𝘯𝘤𝘦. 𝘌𝘷𝘦𝘳𝘺𝘰𝘯𝘦 𝘤𝘢𝘯 𝘩𝘢𝘷𝘦 𝘵𝘩𝘦𝘪𝘳 𝘰𝘸𝘯 𝘱𝘳𝘰𝘧𝘪𝘭𝘦

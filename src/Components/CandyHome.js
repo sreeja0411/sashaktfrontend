@@ -27,7 +27,7 @@ const CandyHome = () => {
             <div className='main-second'> 
 
                 <img className='candy-crush-image9' src="https://img.freepik.com/premium-vector/children-education_29937-3063.jpg?w=360" alt="candy crush logo" />
-            
+                <h1>RIGHT TO EDUCATION</h1>
             </div>
             </button>
             </Link>
@@ -37,7 +37,7 @@ const CandyHome = () => {
             <div className='main-second'> 
 
                 <img className='candy-crush-image19' src="https://previews.123rf.com/images/ollymolly2015/ollymolly20151705/ollymolly2015170500064/78918471-eat-healthy-food-poster-with-fresh-fruits-and-vegetables-isolated-on-white-background-circle.jpg" alt="candy crush logo" />
-            
+                <h1>RIGHT TO EAT</h1>
             </div>
             </button>
             </Link>

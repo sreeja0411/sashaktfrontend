@@ -46,6 +46,13 @@ import CandyAbout from './Components/CandyAbout';
 import Rights from './Components/Rights';
 import Login from './Components/Login';
 import CandyEatGame from './Components/CandyEatGame';
+import Education from './Components/Education';
+import DosAndDonts from './Components/DosAndDonts';
+import RoadSafety from './Components/RoadSafety';
+import Stories from './Components/Stories';
+import Read2 from './Components/Read2';
+import ReadQuiz2 from './Components/ReadQuiz2';
+import LoginSignup from './Components/LoginSignup';
 
 function App() {
   return (
@@ -72,7 +79,7 @@ function App() {
           <Route path='/see' element={<Youtubepage/>}/>
           <Route path='/quiz' element={<QuizPage/>}/>
           <Route path='/display-emoji/:emojiUrl' element={<DisplayEmoji/>}/>
-          <Route path='/submitted/:emojiUrl/:name' element={<SubmittedInfo/>}/>
+          <Route path='/submitted/:emojiUrl/:name/:age' element={<SubmittedInfo/>}/>
           <Route path='/select' element={<ProfileSelection/>}/>
           <Route path='/diy' element={<DIY/>}/>
           <Route path='/pikachu' element={<Pikachu/>}/>
@@ -97,6 +104,13 @@ function App() {
           <Route path='/rights' element={<Rights/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/candyeatgame' element={<CandyEatGame/>}/>
+          <Route path='/education' element={<Education/>}/>
+          <Route path="/DandD" element={<DosAndDonts/>}/>
+          <Route path="/D" element={<RoadSafety/>}/>
+          <Route path="/stories" element={<Stories/>}/>
+          <Route path='/read2' element={<Read2/>}/>
+          <Route path='/readquiz2' element={<ReadQuiz2/>}/>
+          <Route path='/loginsignup' element={<LoginSignup/>}/>
         </Routes>
       </div>
   );

@@ -52,7 +52,7 @@
   }
 
   .side-image {
-	margin-top: 100px;
+	margin-top: 200px;
 	max-width: 500px; /* Adjust the maximum width as per your preference */
 	max-height: 500px; /* Adjust the maximum height as per your preference */
 	/* You can also use 'width' and 'height' properties to set specific dimensions */
@@ -90,7 +90,7 @@
 	margin-top: 20px;
 	background-color: #ffdead;
 	width: 700px;
-	height: 950px;
+	height: 1000px;
 	margin: 0 auto;
 	/* Add other styling properties as needed */
   }
@@ -207,7 +207,7 @@
 
 .timer-box {
 	position: absolute;
-	top: 10px;
+	top: 160px;
 	left: 10px;
   }
   

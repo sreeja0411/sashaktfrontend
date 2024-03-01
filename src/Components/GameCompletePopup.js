@@ -10,7 +10,7 @@ function GameCompletePopup({ moves, timer }) {
     // navigate("/child-rights-info", { state: { moves, timer } });
 
     // Navigate to ChildRightsInfo component
-    navigate("/quiz");
+    navigate("/readquiz");
   };
 
   const textStyle = {

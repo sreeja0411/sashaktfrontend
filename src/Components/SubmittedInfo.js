@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const SubmittedInfo = () => {
-  const { emojiUrl, name } = useParams();
+  const { emojiUrl, name, age } = useParams();
 
   const homeContainerStyle = {
     minHeight: "100vh",
@@ -19,20 +19,35 @@ const SubmittedInfo = () => {
     color: "#222",
     textShadow: '2px 2px 4px rgba(0, 0, 0, 0.4)',
     textAlign: "center",
+    position: "relative",
+    top: "-45px",
   };
 
   const imgStyle = {
     width: "50vw", // Adjusted width for responsiveness
     height: "auto",
     maxWidth: "300px", // Maximum width for larger screens
-    marginTop: "20px", // Adjusted margin for the image
+    position: "relative",
+    top: "-50px",
   };
 
   const text2Style = {
     fontSize: "clamp(14px, 3vw, 24px)", // Responsive font size using clamp()
     color: "#222",
-    textShadow: '2px 2px 4px rgba(0, 0, 0, 0.4)',
+    textShadow: '2px 2px 10px rgba(0, 0, 0, 0.4)',
     textAlign: "center",
+    position: "relative",
+    top: "-30px",
+  };
+
+  const text3Style = {
+    fontSize: "clamp(14px, 3vw, 24px)", // Responsive font size using clamp()
+    color: "#222",
+    textShadow: '2px 2px 10px rgba(0, 0, 0, 0.4)',
+    textAlign: "center",
+    position: "relative",
+    top: "-25px",
+    
   };
 
   const buttonStyle2 = {
@@ -45,11 +60,14 @@ const SubmittedInfo = () => {
     borderRadius: "5px",
     cursor: "pointer",
     outline: "none",
+    position: "relative",
+    top: "-10px",
   };
 
   const handleNavigation = () => {
     // Your logic (e.g., axios call, session storage setting) goes here...
-    sessionStorage.setItem("Name", decodeURIComponent(name));
+    sessionStorage.setItem("username", decodeURIComponent(name));
+    sessionStorage.setItem("Age", decodeURIComponent(age));
     sessionStorage.setItem("emoji", decodeURIComponent(emojiUrl));
   };
 
@@ -61,6 +79,7 @@ const SubmittedInfo = () => {
       </div>
       <div>
         <p style={text2Style}>{decodeURIComponent(name)}</p>
+        <p style={text3Style}>Age: {decodeURIComponent(age)}</p>
       </div>
       <div className="profile-display">
         <Link to="/Activities" onClick={handleNavigation}>

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
-function Labour() {
+function Education() {
   const [text, setText] = useState("Unpuzzle the pieces!!");
   const [selectedDifficulty, setSelectedDifficulty] = useState("easy");
   const [answers, setAnswers] = useState([null, null]);
@@ -75,7 +75,7 @@ function Labour() {
         <p style={{ color: "white", marginBottom: "20px", fontSize:'15px'}}>Your time has exceeded. Do you want to still continue the game?</p>
         <div className="line"></div>
         <div className="popup-buttons">
-        <Link to="/lab"><button className="try-again-btn" onClick={handleYes}>
+        <Link to="/part"><button className="try-again-btn" onClick={handleYes}>
             YES
           </button></Link>
           <Link to="/gamehome"><button className="next-btn">
@@ -115,14 +115,14 @@ function Labour() {
 
   const questions = [
     {
-      question: "Question 1: Which does the above picture describe about?",
-      options: ["Playing", "Child Labour", "Education", "Freedom"],
-      correctAnswer: 1,
+      question: "Question 1: Which right is shown in the above picture?",
+      options: ["Right to Education", "Right to Play", "Right to Participation", "Right to Protection"],
+      correctAnswer: 0,
     },
     {
-      question: "Question 2: What is child labor",
-      options: ["Children doing household chores", "Children working for a living wage", "Employment of children in any work that deprives them of their childhood", "Children helping their parents in their businesses"],
-      correctAnswer: 2,
+      question: "Which age group is typically covered under the right to free and compulsory education in most countries?",
+      options: ["0-5 years", "6-14 years", "15-18 years", "19-25 years"],
+      correctAnswer: 1,
     },
   ];
 
@@ -177,11 +177,11 @@ function Labour() {
     return (
       <div className="score-popup">
         <h2 style={{color : "white", marginTop: "10px", fontSize: "45px"}}>Puzzle Completed!</h2>
-        <p style={{ color: "white", marginBottom: "20px" ,fontSize: "20px"}}>Your Score:</p>
+        <p style={{ color: "white", marginBottom: "20px", fontSize: "20px"}}>Your Score:</p>
       <p style={{ color: "lime", fontSize: "100px", marginBottom: "20px" ,fontFamily: "serif"}}>{score}</p>
         <div className="line"></div>
         <div className="popup-buttons">
-        <Link to="/lab"><button className="try-again-btn" onClick={handleTryAgain}>
+        <Link to="/part"><button className="try-again-btn" onClick={handleTryAgain}>
             Try Again
           </button></Link>
           <Link to="/gamehome"><button className="next-btn">
@@ -266,7 +266,7 @@ function Labour() {
     return (
       <div className={`jigsaw-puzzle${blurred ? ' blurred' : ''}`}>
       <JigsawPuzzle
-        imageSrc="https://images.newindianexpress.com/uploads/user/imagelibrary/2023/5/8/w1200X800/child_labour.jpg"
+        imageSrc="https://img.freepik.com/free-vector/girls-boys-students-with-lockers-noteboard_24640-45516.jpg"
         rows={rows}
         columns={columns}
         onSolved={() => {
@@ -299,7 +299,7 @@ function Labour() {
       </div>
       <div className="left-box">
         <img
-          src="https://images.newindianexpress.com/uploads/user/imagelibrary/2023/5/8/w1200X800/child_labour.jpg"
+          src="https://img.freepik.com/free-vector/girls-boys-students-with-lockers-noteboard_24640-45516.jpg"
           alt="Image"
           className="side-image"
         />
@@ -339,4 +339,4 @@ function Labour() {
   );
 }
 
-export default Labour;
+export default Education;

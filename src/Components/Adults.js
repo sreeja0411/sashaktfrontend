@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Adults = () => {
   const emojiUrls = [
@@ -58,6 +60,11 @@ const Adults = () => {
 
   return (
     <div className="homeContainer6">
+      <div className="back-container">
+                <Link to="/select" className="back-button">
+                    <FontAwesomeIcon icon={faArrowLeft} />
+                </Link>
+      </div>
       <h1 className="textStyle9">PICK YOUR EMOJI</h1>
       <div className="emojiContainer">
         {emojiUrls.map((emojiUrl, index) => (

@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+
 
 const Navbar = () => {
     const [isActive, setIsActive] = useState(false);
@@ -45,7 +48,8 @@ const Navbar = () => {
                 <nav className={`navbar ${isActive ? 'active' : ''}`}>
                     <Link to="/" >Home</Link>
                     <Link to="/About" >About</Link>
-                    <Link to="/Activities" >Activities</Link>
+                    <Link to="/Activities">Activities</Link>
+                    
                     <Link to="/Emergency" >Emergency</Link>
                 </nav>
                 <img
@@ -53,6 +57,7 @@ const Navbar = () => {
                     src={sessionStorage.getItem('emoji')}
                     onClick={handleEmojiClick}
                 />
+                
                 <div className="icons">
                     <button
                         id="menu-toggle"
@@ -67,7 +72,7 @@ const Navbar = () => {
                     className="emoji-img2"
                     src={sessionStorage.getItem('emoji')}
                 />
-                <h5 className='username'>{sessionStorage.getItem("Name")}</h5>
+                <h5 className='username'>{sessionStorage.getItem('username')}</h5>
                 <Link to="/select" className="custom-link">
                     <button className="custom-button">SWITCH PROFILE</button>
                 </Link>

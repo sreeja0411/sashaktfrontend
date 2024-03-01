@@ -9,10 +9,10 @@ const Activities = () => {
     <div className="box-container">
 
         <button className="box-button">
-            <Link to="/diy">
+            <Link to="/stories">
                 <div className="box">
-                    <img src="images/Fun-zone-activities.jpg" alt=""/>
-                    <h3>DIY Activities</h3>
+                    <img src="images/Read-along-stories.jpg" alt=""/>
+                    <h3>read along stories</h3>
                 </div>
             </Link>
         </button>
@@ -37,10 +37,10 @@ const Activities = () => {
 
 
         <button className="box-button">
-            <Link to="/read">
+            <Link to="/diy">
                 <div className="box">
-                    <img src="images/Read-along-stories.jpg" alt=""/>
-                    <h3>read along stories</h3>
+                    <img src="images/Fun-zone-activities.jpg" alt=""/>
+                    <h3>DIY Activities</h3>
                 </div>
             </Link>
         </button>
@@ -48,11 +48,21 @@ const Activities = () => {
         <button className="box-button">
             <Link to="/rights">
                 <div className="box">
-                    <img src="https://wepik.com/api/image/ai/9b14adc7-b562-4fc7-8ba2-83652aa12672?thumb=1" alt=""/>
+                    <img src="https://www.eurokidsindia.com/ek-new-2023/images/homebuddy/Weekly-learning-plans.png" alt=""/>
                     <h3>know your rights</h3>
                 </div>
             </Link>
         </button>
+
+        <button className="box-button">
+            <Link to="/DandD">
+                <div className="box">
+                    <img src="https://www.eurokidsindia.com/ek-new-2023/images/homebuddy/Advanced-teacher-connectivity.png" alt=""/>
+                    <h3>dos and dont's</h3>
+                </div>
+            </Link>
+        </button>
+
     </div>
 </section>
      );

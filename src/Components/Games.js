@@ -1,14 +1,21 @@
 import React from "react";
 import "./gamehome.css";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Games = () => {
   return (
     <div className="main">
+      <div className="back-container">
+                <Link to="/Activities" className="back-button">
+                    <FontAwesomeIcon icon={faArrowLeft} />
+                </Link>
+      </div>
       <div className="card-container">
         <div className="card1">
           <div className="image">
-            <img src="https://img.gamepix.com/games/italia-jigsaw-puzzle/icon/italia-jigsaw-puzzle.png" alt="Jigsaw Puzzle" />
+            <img src="https://i.ytimg.com/vi/-bRezNZfhWA/maxresdefault.jpg" alt="Jigsaw Puzzle" />
           </div>
           <div className="title">
             <h1>JIGSAW PUZZLE</h1>
@@ -50,7 +57,7 @@ const Games = () => {
 
         <div className="card1">
           <div className="image">
-            <img src="https://store-images.s-microsoft.com/image/apps.54354.13510798882606697.7a42c472-75d7-487e-9538-ebb5ce1657e6.372723d8-dd1a-450a-9fed-d420e7705e4e" alt="Memory Game" />
+            <img src="https://play-lh.googleusercontent.com/4jKtghntaIhEmkM1McDD4SThPDIliC0_fzkis9-2CquNjG4hKb763MhqJc0C4vmtX1k=w3840-h2160-rw" alt="Memory Game" />
           </div>
           <div className="title">
             <h1>CANDY CRUSH</h1>

@@ -1,8 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Jumpingfrog = () => {
     return ( 
         <div className="pikachu-info">
+            <div className="back-container">
+                <Link to="/diy" className="back-button">
+                    <FontAwesomeIcon icon={faArrowLeft} />
+                </Link>
+            </div>
             <div className="pikachu-content">
                 <div className="pikachu-text">
                     <h1>JUMPING FROG</h1>

@@ -11,14 +11,12 @@ const Home = () => {
 
   return (
     <section className="home" id="home">
-      <div
-        className="swiper-slide"
-        style={{
-          background: 'url(images/home-bg-1.jpg) no-repeat',
-          backgroundSize: 'cover',
-          position: 'relative', // Set position to relative
-        }}
-      >
+      <div className="swiper-slide">
+      <img
+    src="images/home-bg-1.jpg"
+    alt=""
+    className="home-image-style"
+  />
         <div
           className="content"
           style={{
@@ -32,7 +30,7 @@ const Home = () => {
         >
           <h3>sashakt</h3>
           <p>app for child empowerment</p>
-          <Link to='/select'>
+          <Link to='/loginsignup'>
           <button
             onClick={handleGetStarted}
             style={{

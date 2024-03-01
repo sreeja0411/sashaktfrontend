@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 const width = 8
 
 const blueCandy = 'https://em-content.zobj.net/source/whatsapp/352/red-apple_1f34e.png';
-const greenCandy = 'https://em-content.zobj.net/source/whatsapp/352/kiwi-fruit_1f95d.png';
-const orangeCandy = 'https://em-content.zobj.net/source/whatsapp/352/lollipop_1f36d.png';
-const purpleCandy = 'https://em-content.zobj.net/source/whatsapp/352/candy_1f36c.png';
-const redCandy = 'https://em-content.zobj.net/source/whatsapp/352/ice-cream_1f368.png';
-const yellowCandy = 'https://em-content.zobj.net/source/whatsapp/352/cookie_1f36a.png';
+const greenCandy = 'https://www.emojimeanings.net/img/emojis/watermelon_1f349.png';
+const orangeCandy = 'https://www.emojimeanings.net/img/emojis/tangerine_1f34a.png';
+const purpleCandy = 'https://www.emojimeanings.net/img/emojis/pear_1f350.png';
+const redCandy = 'https://www.emojimeanings.net/img/emojis/mango_1f96d.png';
+const yellowCandy = 'https://www.emojimeanings.net/img/emojis/carrot_1f955.png';
 const blank = 'images/blank.jpg';
 
 const candyColors = [
